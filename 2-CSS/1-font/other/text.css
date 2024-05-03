@@ -1,0 +1,35 @@
+.heading {
+    color: #21d646;
+    text-decoration : line-through;
+}
+
+.price {
+    text-decoration: line-through;
+}
+
+.tran {
+    text-transform: none;
+    /* letter-spacing: 20px; */
+    word-spacing: 20px;
+    font-family: "Open Sans Condensed";
+    font-weight: bold;
+    font : 20px "Open Sans Condensed"
+}
+
+.mm{
+    font-family: "Myanmar Angoun", "Padauk", serif, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    /* line-height: 60px; */
+    /* letter-spacing: 10px; */
+}
+
+.start {
+    font-size: 40px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.shorthand{
+    font : italic bold 38px "Roboto", serif;
+}
