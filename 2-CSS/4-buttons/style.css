@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #FF204E;
+    transition: 1s;
+}
+
+.py-5 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.pt-4{
+    padding-top: 20px;
+}
+.px-5{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bg-pink{
+    background-color: #F3D0D7;
+}
+
+.bg-green{
+    background-color: #75A47F;
+}
+
+.bg-green:hover{
+    background-color: #00224D;
+    color: #F3D0D7;
+}
+
+.bg-dark{
+    background-color: #222831;
+}
+
+.heading{
+    font-size: 20px;
+    color: red;
+
+}
+
+.border-none{
+    border: none;
+}
+
+.border-red{
+    border-color: #FF204E;
+    
+}
+
+.text-gray {
+    color: #E2DFD0;
+}
+
+.rounded{
+    border-radius: 20px;
+}
