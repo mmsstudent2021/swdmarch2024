@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box{
+    height: 500px;
+    border: 1px solid black;
+    margin: 50px;
+    position: relative;
+}
+
+.obj:nth-child(1){
+    position: relative;
+
+    height: 200px;
+    top: 60px;
+
+}
+
+.obj:nth-child(2) {
+    height: 200px;
+    position: absolute;
+  
+}
+
+.obj:nth-child(3) {
+    height: 200px;
+    position: static;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(35, 212, 232);
+    position: absolute;
+}
+
+.rb {
+    width: 400px;
+    height: 450px;
+    background-color: rgb(91, 232, 35);
+    position: static;
+}
