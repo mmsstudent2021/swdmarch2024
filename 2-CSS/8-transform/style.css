@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    margin: 50px;
+    perspective: 1000px;
+
+}
+
+.container:hover{
+   border: none;
+   animation-name: toRight;
+   animation-delay: 3s;
+   animation-duration: 1s;
+   animation-fill-mode: both;
+   
+}
+
+.box {
+
+    width: 200px;
+    transform-origin:center ;
+    animation-name: rotateRight;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.text1{
+    transform-origin:top left ;
+    animation-name: toRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+.text2{
+    animation-delay: 1s;
+    transform-origin:top left ;
+    animation-name: toRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+.text3{
+    animation-delay: 2s;
+    transform-origin:top left ;
+    animation-name: toRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+
+
+@keyframes toRight {
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translate(50px);
+        color: rgb(0, 255, 42);
+        rotate: 1turn;
+    }   
+}
+
+@keyframes rotateRight {
+    from {
+        rotate: 0deg;
+        transform: translateX(1000px);
+
+    }
+
+    to {
+        rotate: -1turn;
+
+    }
+}
