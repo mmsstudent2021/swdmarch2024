@@ -6,18 +6,25 @@
 @tailwind utilities;
 
 
-@font-face {
-    font-family: 'TharLon';
-    src: url(./fonts/TharLon.ttf) format('ttf');
-}
 
-@font-face {
-    font-family: 'MM-Thu';
-    src: url(./fonts/MyanmarThuriya.ttf) format('ttf');
-}
-
-@font-face {
-    font-family: 'MyanmarAngoun';
-    src: url(./fonts/MyanmarAngoun.ttf) format('ttf');
-}
+    @font-face {
+        font-family: 'TharLon';
+        src: url(./fonts/TharLon.ttf) ;
+    }
+    
+    @font-face {
+        font-family: 'MM-Thu';
+        src: url(./fonts/MyanmarThuriya.ttf) ;
+    }
+    
+    @font-face {
+        font-family: 'MyanmarAngoun';
+        src: url(./fonts/MyanmarAngoun.ttf) ;
+    }
+    
+    @font-face {
+        font-family: "mm-nayone";
+        src: url(./fonts/mmny.ttf);
+    }
+    
 

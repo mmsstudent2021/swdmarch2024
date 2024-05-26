@@ -564,11 +564,6 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.bg-black-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 79 148 / var(--tw-bg-opacity));
-}
-
 .font-mm-angoun{
   font-family: MyanmarAngoun;
 }
@@ -597,6 +592,10 @@ video {
   font-family: MM-Thu;
 }
 
+.font-mm-ny{
+  font-family: mm-nayone;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -607,14 +606,14 @@ video {
   line-height: 2.5rem;
 }
 
-.text-orange-second{
-  --tw-text-opacity: 1;
-  color: rgb(255 95 0 / var(--tw-text-opacity));
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.text-black-800{
+.text-brown-2{
   --tw-text-opacity: 1;
-  color: rgb(0 14 48 / var(--tw-text-opacity));
+  color: rgb(169 29 58 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -624,18 +623,25 @@ video {
 @font-face {
   font-family: 'TharLon';
 
-  src: url(./fonts/TharLon.ttf) format('ttf');
+  src: url(./fonts/TharLon.ttf) ;
 }
 
 @font-face {
   font-family: 'MM-Thu';
 
-  src: url(./fonts/MyanmarThuriya.ttf) format('ttf');
+  src: url(./fonts/MyanmarThuriya.ttf) ;
 }
 
 @font-face {
   font-family: 'MyanmarAngoun';
 
-  src: url(./fonts/MyanmarAngoun.ttf) format('ttf');
+  src: url(./fonts/MyanmarAngoun.ttf) ;
 }
+
+@font-face {
+  font-family: "mm-nayone";
+
+  src: url(./fonts/mmny.ttf);
+}
+    
 
