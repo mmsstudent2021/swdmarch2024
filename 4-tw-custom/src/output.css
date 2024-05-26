@@ -564,6 +564,15 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.bg-black-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 79 148 / var(--tw-bg-opacity));
+}
+
+.font-mm-angoun{
+  font-family: MyanmarAngoun;
+}
+
 .font-noto-mm{
   font-family: Noto Sans Myanmar;
 }
@@ -584,11 +593,49 @@ video {
   font-family: Roboto, Padauk;
 }
 
+.font-thu{
+  font-family: MM-Thu;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-orange-second{
+  --tw-text-opacity: 1;
+  color: rgb(255 95 0 / var(--tw-text-opacity));
+}
+
+.text-black-800{
+  --tw-text-opacity: 1;
+  color: rgb(0 14 48 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
+
+@font-face {
+  font-family: 'TharLon';
+
+  src: url(./fonts/TharLon.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'MM-Thu';
+
+  src: url(./fonts/MyanmarThuriya.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'MyanmarAngoun';
+
+  src: url(./fonts/MyanmarAngoun.ttf) format('ttf');
+}
+
