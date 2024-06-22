@@ -402,62 +402,183 @@
 // console.log(threeDArray[1][0]);
 // console.log(threeDArray[1][0][2]);
 
-const SWD = [
-  {
-    name: "mg mg",
-    gender: "male",
-    age: 18,
-  },
-  {
-    name: "su su",
-    gender: "female",
-    age: 17,
-  },
-  {
-    name: "hla hla",
-    gender: "female",
-    age: 18,
-  },
-  {
-    name: "zaw zaw",
-    gender: "male",
-    age: 17,
-  },
-];
+// const SWD = [
+//   {
+//     name: "mg mg",
+//     gender: "male",
+//     age: 18,
+//   },
+//   {
+//     name: "su su",
+//     gender: "female",
+//     age: 17,
+//   },
+//   {
+//     name: "hla hla",
+//     gender: "female",
+//     age: 18,
+//   },
+//   {
+//     name: "zaw zaw",
+//     gender: "male",
+//     age: 17,
+//   },
+// ];
 
-const products = [
-  {
-    name: "Laptop",
-    price: 999.99,
-    stock: 10,
-  },
-  {
-    name: "Smartphone",
-    price: 699.99,
-    stock: 25,
-  },
-  {
-    name: "Tablet",
-    price: 499.99,
-    stock: 15,
-  },
-  {
-    name: "Smartwatch",
-    price: 199.99,
-    stock: 30,
-  },
-  {
-    name: "Headphones",
-    price: 149.99,
-    stock: 50,
-  },
-];
+// const products = [
+//   {
+//     name: "Laptop",
+//     price: 999.99,
+//     stock: 10,
+//   },
+//   {
+//     name: "Smartphone",
+//     price: 699.99,
+//     stock: 25,
+//   },
+//   {
+//     name: "Tablet",
+//     price: 499.99,
+//     stock: 15,
+//   },
+//   {
+//     name: "Smartwatch",
+//     price: 199.99,
+//     stock: 30,
+//   },
+//   {
+//     name: "Headphones",
+//     price: 149.99,
+//     stock: 50,
+//   },
+// ];
 
-console.log(SWD);
-console.log(SWD[2]);
-console.log(SWD[2]["name"]);
-console.log(SWD[2].name);
+// console.log(SWD);
+// console.log(SWD[2]);
+// console.log(SWD[2]["name"]);
+// console.log(SWD[2].name);
 
-console.log(products);
-console.log(products[3]);
-console.log(products[3].stock);
+// console.log(products);
+// console.log(products[3]);
+// console.log(products[3].stock);
+
+// let x = 5;
+// let y = 10;
+// z = x;
+// console.log(z);
+// x = 7;
+// console.log(z);
+// console.log(x);
+
+// x = 7;
+
+// const x = ["a", "b", "c"];
+// const y = [1, 5, 9];
+// const z = x;
+// console.log(z);
+// x[3] = "d";
+// console.log(x);
+// console.log(z);
+// z[4] = "e"
+// console.log(x);
+
+// console.log("hello");
+
+// console.log(area(15, 50));
+
+// function area(w, h) {
+//   return w * h;
+// }
+
+// const area = function (w, h) {
+//   return w * h;
+// };
+
+// const showResult = function (val) {
+//   console.log(val);
+// };
+
+// showResult(area(5, 7));
+
+// console.log(area(15, 50));
+
+// (function () {
+//   console.log("hello");
+// })();
+
+// console.log(
+//   ` I'm ${(function () {
+//     const currentYear = 2024;
+//     const birthYear = 1994;
+//     const age = currentYear - birthYear;
+//     return age;
+//   })()} years old`
+// );
+
+// before es6 - var | es6 - let , const
+// scope 4
+
+// function run() {
+//   let y = 10;
+//   const x = 5;
+//   console.log(x);
+//   console.log(y);
+// }
+// run()
+// console.log(y);
+// let x = 5;
+
+// {
+//   console.log(x);
+// }
+
+// function run() {
+//   console.log(x);
+// }
+
+// run();
+
+// console.log(x);
+// console.log(x);
+
+// {
+//   var x = 5;
+//   console.log(x);
+// }
+// console.log(x);
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i, "loop");
+// }
+
+// console.log(i);
+
+// console.log(x);
+
+// x = 5;
+// {
+//   console.log(x);
+// }
+
+// function run() {
+//   console.log(x);
+// }
+
+// run();
+
+// console.log(x);
+
+// let x = "hein htet zan";
+// console.log(undefined ? true : false);
+// console.log([] ? true : false);
+// console.log({} ? true : false);
+// console.log(2 ? true : false);
+// console.log(-200 ? true : false);
+// console.log(0 ? true : false);
+// console.log("" ? true : false);
+// console.log(" " ? true : false);
+// console.log("abc" ? true : false);
+// console.log("hein" - "e" ? true : false);
+// console.log(null ? true : false);
+
+console.log((3 + 10) * 2);
