@@ -1,7 +1,7 @@
 console.log("Loop Practicals");
 
 const points = [34, 15, 2, 52, 19, 56, 30, 57];
-const product = [
+const products = [
   {
     id: 1,
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -277,6 +277,116 @@ const product = [
 // 4. array 5ခန်း ခွဲထုတ်ပြပါ
 // 5. ကြိုက်တဲ့ index ကစ ကြိုက်သလောက် အခန်းအရည်အတွက် ခွဲထုတ် နိုင်တဲ့ function
 // 6. CopyArray, Modified Array, Filter Array
+
+const copyArray = function (inputArray) {
+  const result = [];
+  let resultIndex = 0;
+  for (let el of inputArray) {
+    result[resultIndex++] = el;
+  }
+  return result;
+};
+
+console.log(points);
+const x = copyArray(points);
+console.log(x);
+points[0] = 555;
+console.log(points);
+console.log(x);
+
+
+// console.log(points);
+// const x = points;
+// console.log(x);
+
+
+// console.log(x);
+
+// let total = 0;
+// for (let point of points) {
+//   // console.log(point);
+//   total += point;
+// }
+// console.log(total);
+
+// const numericArraySum = function (inputArray) {
+//   let total = 0;
+//   for (let el of inputArray) {
+//     total += el;
+//   }
+//   return total;
+// };
+
+// console.log(numericArraySum(points));
+// console.log(numericArraySum([1,2,3]));
+// console.log(numericArraySum([5,3,76,2,8]));
+
+// const separateOddEven = function (inputArray) {
+//   const oddArray = [];
+//   let oddArrayIndex = 0;
+
+//   const evenArray = [];
+//   let evenArrayIndex = 0;
+
+//   for (let el of inputArray) {
+//     if (el % 2) {
+//       // console.log(el, "odd");
+//       oddArray[oddArrayIndex++] = el;
+//     } else {
+//       // console.log(el, "even");
+//       evenArray[evenArrayIndex++] = el;
+//     }
+//   }
+
+//   return {
+//     odd: oddArray,
+//     even: evenArray,
+//   };
+// };
+
+// console.log(separateOddEven(points));
+// console.log(separateOddEven([1,2,3,4,5,6,7,8]));
+
+// console.log(points);
+// const result = [];
+// let resultIndex = 0;
+// const length = 5;
+
+// for (let index in points) {
+//   if (index < length) {
+//     // console.log(index, points[index]);
+//     result[resultIndex++] = points[index];
+//   } else {
+//     break;
+//   }
+// }
+
+// console.log(result);
+
+// const sliceArray = function (inputArray, length, startIndex = 0) {
+//   const result = [];
+//   let resultIndex = 0;
+//   const endIndex = startIndex + length;
+
+//   for (let index in inputArray) {
+//     if (index >= startIndex && index < endIndex) {
+//       // console.log(index, points[index]);
+//       result[resultIndex++] = inputArray[index];
+//     }
+
+//     if (index == endIndex) break;
+//     // console.log("loop");
+//   }
+//   return result;
+// };
+
+// console.log(points);
+// console.log(sliceArray(points, 3));
+// console.log(sliceArray(points, 5));
+// console.log(sliceArray(points, 3, 2));
+// console.log(sliceArray(points, 5, 0));
+// console.log(sliceArray(points, 5, 1));
+// console.log(sliceArray(points, 5, 2));
 
 // Problems
 // 3 x 3 square လေးဖန်တီးရအောင်
