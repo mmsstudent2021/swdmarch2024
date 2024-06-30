@@ -278,27 +278,25 @@ const products = [
 // 5. ကြိုက်တဲ့ index ကစ ကြိုက်သလောက် အခန်းအရည်အတွက် ခွဲထုတ် နိုင်တဲ့ function
 // 6. CopyArray, Modified Array, Filter Array
 
-const copyArray = function (inputArray) {
-  const result = [];
-  let resultIndex = 0;
-  for (let el of inputArray) {
-    result[resultIndex++] = el;
-  }
-  return result;
-};
+// const copyArray = function (inputArray) {
+//   const result = [];
+//   let resultIndex = 0;
+//   for (let el of inputArray) {
+//     result[resultIndex++] = el;
+//   }
+//   return result;
+// };
 
-console.log(points);
-const x = copyArray(points);
-console.log(x);
-points[0] = 555;
-console.log(points);
-console.log(x);
-
+// console.log(points);
+// const x = copyArray(points);
+// console.log(x);
+// points[0] = 555;
+// console.log(points);
+// console.log(x);
 
 // console.log(points);
 // const x = points;
 // console.log(x);
-
 
 // console.log(x);
 
@@ -399,6 +397,68 @@ console.log(x);
 // * *
 // * * *
 
+// console.log("* * *\n* * *\n* * *");
+// console.log(`* * * *\n* * *\n* *\n*`);
+
+// const triangle = function (h, char = "*") {
+//   let row = "";
+
+//   for (let y = 1; y <= h; y++) {
+//     for (let i = 1; i <= y; i++) {
+//       row += `${char} `;
+//     }
+//     row += "\n";
+//   }
+
+//   return row;
+// };
+// console.log(triangle(7, "x"));
+// console.log(triangle(3, 0));
+// console.log(triangle(9, "+"));
+
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// const reverseTriangle = function (h, char = "*") {
+//   let row = "";
+
+//   for (let y = h; y >= 1; y--) {
+//     for (let i = 1; i <= y; i++) {
+//       row += `${char} `;
+//     }
+//     row += "\n";
+//   }
+
+//   return row;
+// };
+
+// console.log(reverseTriangle(7, "x"));
+// console.log(reverseTriangle(3, 0));
+// console.log(reverseTriangle(9, "+"));
+
+// const rect = function (w, h, char = "*") {
+//   let row = "";
+
+//   for (let y = 1; y <= h; y++) {
+//     for (let i = 1; i <= w; i++) {
+//       row += `${char} `;
+//     }
+//     row += "\n";
+//   }
+
+//   return row;
+// };
+
+// console.log(rect(5, 7, "x"));
+// console.log(rect(3, 3, 0));
+// console.log(rect(7, 9, "+"));
+
+// console.log(
+//   `⬜️🟩⬜️🟩⬜️🟩⬜️🟩\n🟩⬜️🟩⬜️🟩⬜️🟩⬜️\n⬜️🟩⬜️🟩⬜️🟩⬜️🟩\n🟩⬜️🟩⬜️🟩⬜️🟩⬜️\n⬜️🟩⬜️🟩⬜️🟩⬜️🟩\n🟩⬜️🟩⬜️🟩⬜️🟩⬜️\n⬜️🟩⬜️🟩⬜️🟩⬜️🟩\n🟩⬜️🟩⬜️🟩⬜️🟩⬜️`
+// );
+// const kyarKwat = function (x, y) {};
+
 const marks = {
   mm: 45,
   en: 72,
@@ -498,12 +558,12 @@ const allStudentsMark = [
       {
         subject: "Chemistry",
         short: "chem",
-        mark: 38,
+        mark: 88,
       },
       {
         subject: "Physics",
         short: "phy",
-        mark: 40,
+        mark: 90,
       },
       {
         subject: "Biology",
@@ -549,9 +609,71 @@ const allStudentsMark = [
   },
 ];
 
+// console.log(marks);
+// console.table(student1Mark);
+// console.log(allStudentsMark);
+
 // Problems
 // 1. marks, studentMark စုစုပေါင်း ရေးပြပါ
 // 2. studentMark မှဘာသာရပ်တစ်ခုစီ ကျရှံးတွက်ပေးပါကြရှုံး
 // 3. over all အောင်မြင်၊ ကျရှုံးတွက်ပေးပါ
 // 4. ကျောင်းသားအားလုံး အောင်မြင်၊ ကျရှုံးတွက် ပေးပါ
 // 5. အောင်မြင်တဲ့လူတွေဆို Distinction ပါရင် ထည့်ရည်တွက်ပေးပါ
+
+// let totalMark = 0;
+// for (let key in marks) {
+//   console.log(key, marks[key]);
+//   totalMark += marks[key];
+// }
+// console.log(totalMark);
+
+// let totalMark = 0;
+
+// for (let el of student1Mark) {
+//   console.log(el, el.mark);
+//   totalMark += el.mark;
+// }
+// console.log(totalMark);
+
+// const obj = {};
+
+// obj.x = "aaa";
+// obj.y = "bbb";
+// obj.z = "ccc"
+// console.log(obj);
+
+// let overallResult = "passed";
+
+// for (let el of student1Mark) {
+//   if (el.mark >= 40) {
+//     el.result = "passed";
+//   } else {
+//     el.result = "failed";
+//     overallResult = "failed";
+//   }
+// }
+// console.table(student1Mark);
+// console.log(overallResult);
+
+for (let st of allStudentsMark) {
+  // console.log(st.name, st.marks);
+  let overallResult = "passed";
+  let countD = 0;
+  for (let el of st.marks) {
+    if (el.mark > 80) {
+      countD++;
+    }
+    if (el.mark < 40) {
+      overallResult = "failed";
+    }
+  }
+  st.overallResult = overallResult;
+
+  if (st.overallResult === "passed") {
+    st.d = countD;
+  } else {
+    st.d = 0;
+  }
+}
+
+console.table(allStudentsMark);
