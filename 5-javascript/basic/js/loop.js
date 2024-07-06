@@ -655,25 +655,25 @@ const allStudentsMark = [
 // console.table(student1Mark);
 // console.log(overallResult);
 
-for (let st of allStudentsMark) {
-  // console.log(st.name, st.marks);
-  let overallResult = "passed";
-  let countD = 0;
-  for (let el of st.marks) {
-    if (el.mark > 80) {
-      countD++;
-    }
-    if (el.mark < 40) {
-      overallResult = "failed";
-    }
-  }
-  st.overallResult = overallResult;
+// for (let st of allStudentsMark) {
+//   // console.log(st.name, st.marks);
+//   let overallResult = "passed";
+//   let countD = 0;
+//   for (let el of st.marks) {
+//     if (el.mark > 80) {
+//       countD++;
+//     }
+//     if (el.mark < 40) {
+//       overallResult = "failed";
+//     }
+//   }
+//   st.overallResult = overallResult;
 
-  if (st.overallResult === "passed") {
-    st.d = countD;
-  } else {
-    st.d = 0;
-  }
-}
+//   if (st.overallResult === "passed") {
+//     st.d = countD;
+//   } else {
+//     st.d = 0;
+//   }
+// }
 
-console.table(allStudentsMark);
+// console.table(allStudentsMark);
