@@ -168,54 +168,96 @@ const st5 = {
 // console.dir(now);
 // console.log(now.toDateString());
 
-class Person {
-  // name,age
-  constructor(name, age, gender) {
-    this.name = name;
-    this.age = age;
-    this.gender = gender;
+// class Person {
+//   // name,age
+//   constructor(name, age, gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+
+//   talk() {
+//     return this.name + " can talk";
+//   }
+// }
+
+// class Student extends Person {
+//   constructor(name, age, gender, major) {
+//     super(name, age, gender);
+//     this.major = major;
+//   }
+//   learn() {
+//     return `${this.name} can learn`;
+//   }
+// }
+
+// class Monitor extends Student {
+//   constructor(name, age, gender, major, roomNo) {
+//     super(name, age, gender, major);
+//     this.roomNo = roomNo;
+//   }
+//   command() {
+//     return `${this.name} can command student from room ${this.roomNo}`;
+//   }
+// }
+
+// const me = new Person("hein htet zan", 18, "male");
+// console.log(me);
+// console.log(me.talk());
+
+// const st1 = new Student("Mg Mg", 16, "male", "swd");
+// console.log(st1);
+// console.log(st1.talk());
+// console.log(st1.learn());
+
+// const st2 = new Student("Su Su", 17, "female", "wad");
+// console.log(st2);
+
+// const m1 = new Monitor("Kyaw Kyaw", 17, "male", "swd", 5);
+// console.log(m1);
+// console.log(m1.name);
+// console.log(m1.learn());
+// console.log(m1.talk());
+// console.log(m1.command());
+
+class BankAccount {
+  #balance = 0;
+
+  deposit(amount) {
+    this.#balance += amount;
+    return `U deposit ${amount}.Money update is ${this.#balance}`;
   }
 
-  talk() {
-    return this.name + " can talk";
+  withdraw(amount) {
+    if (amount <= this.#balance) {
+      this.#balance -= amount;
+      return `U withdraw ${amount}. Money update ${this.#balance}`;
+    }
+    return `${amount} is not allowed`;
   }
+
+  checkBalance() {
+    return `Money is ${this.#balance}`;
+  }
+
+  // getter, setter methods
+  // getter() {
+  //   return this.#balance === 0 ? "no money" : this.#balance;
+  // }
+
+  // setter(amount) {
+  //   this.#balance += amount;
+  // }
 }
 
-class Student extends Person {
-  constructor(name, age, gender, major) {
-    super(name, age, gender);
-    this.major = major;
-  }
-  learn() {
-    return `${this.name} can learn`;
-  }
-}
-
-class Monitor extends Student {
-  constructor(name, age, gender, major, roomNo) {
-    super(name, age, gender, major);
-    this.roomNo = roomNo;
-  }
-  command() {
-    return `${this.name} can command student from room ${this.roomNo}`;
-  }
-}
-
-const me = new Person("hein htet zan", 18, "male");
-console.log(me);
-console.log(me.talk());
-
-const st1 = new Student("Mg Mg", 16, "male", "swd");
-console.log(st1);
-console.log(st1.talk());
-console.log(st1.learn());
-
-const st2 = new Student("Su Su", 17, "female", "wad");
-console.log(st2);
-
-const m1 = new Monitor("Kyaw Kyaw", 17, "male", "swd", 5);
-console.log(m1);
-console.log(m1.name);
-console.log(m1.learn());
-console.log(m1.talk());
-console.log(m1.command());
+const myBankAccount = new BankAccount();
+console.log(myBankAccount.deposit(500));
+console.log(myBankAccount.deposit(3000));
+console.log(myBankAccount.withdraw(1500));
+console.log(myBankAccount.checkBalance());
+// myBankAccount.balance += 100;
+// console.log(myBankAccount);
+// myBankAccount.setter(100);
+// myBankAccount.setter(200)
+// console.log(myBankAccount.getter());
+// console.log(myBankAccount.#balance);
