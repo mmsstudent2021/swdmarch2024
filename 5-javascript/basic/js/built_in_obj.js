@@ -245,21 +245,22 @@
 // [1,25,49,81,9] **2
 
 // hof
-function modifyArray(inputArray, x) {
-  const result = [];
-  let resultIndex = 0;
 
-  for (let el of inputArray) {
-    result[resultIndex++] = x(el);
-  }
+// function modifyArray(inputArray, x) {
+//   const result = [];
+//   let resultIndex = 0;
 
-  return result;
-}
+//   for (let el of inputArray) {
+//     result[resultIndex++] = x(el);
+//   }
+
+//   return result;
+// }
 
 // callback
-function double(input) {
-  return input * 2;
-}
+// function double(input) {
+//   return input * 2;
+// }
 
 // console.log(points);
 
@@ -400,7 +401,7 @@ function double(input) {
 
 // console.log(Math.max(...nums));
 
-const fruits = ["orange", "mango", "banana", "lemon", "lime", "apple"];
+// const fruits = ["orange", "mango", "banana", "lemon", "lime", "apple"];
 
 // console.log(
 //   fruits.reduce(function (pv, cv) {
@@ -754,6 +755,34 @@ const products = [
   },
 ];
 
+console.table(products);
+
+// products.sort((a, b) => a.id - b.id); // id asc
+
+// products.sort((a, b) => b.id - a.id); // id desc
+
+// products.sort((a, b) => a.price - b.price); // price asc
+// products.sort((a, b) => b.price - a.price); // price desc
+// products.sort((a, b) => a.rating.rate - b.rating.rate); // rating asc
+products.sort((a, b) => b.rating.rate - a.rating.rate); // rating asc
+
+console.table(products);
+
+// const [first, second, third] = products
+//   .filter(({ price, rating: { rate } }) => price < 100 && rate >= 4)
+//   .map(({ id, title, price, rating: { rate } }) => ({
+//     id,
+//     title,
+//     price: (price + 10).toFixed(2),
+//     rate,
+//   }));
+
+// console.log(first);
+// console.log(second);
+// console.log(third);
+
+// console.table(saleProducts);
+
 // const selectedProducts = products
 //   .filter(function (el) {
 //     return el.price < 100;
@@ -770,12 +799,12 @@ const products = [
 //   }, 0)
 //   .toFixed(0);
 
-const selectedProducts = products
-  .filter((el) => el.price < 100)
-  .map((el) => ({ id: el.id, price: el.price + 100 }))
-  .reduce((pv,cv) => pv+cv.price , 0)
+// const selectedProducts = products
+//   .filter((el) => el.price < 100)
+//   .map((el) => ({ id: el.id, price: el.price + 100 }))
+//   .reduce((pv, cv) => pv + cv.price, 0);
 
-console.table(selectedProducts);
+// console.table(selectedProducts);
 
 // const priceTotal = products.reduce(function (pv, cv) {
 //   // console.log(pv, cv.price);
@@ -842,3 +871,94 @@ console.table(selectedProducts);
 //   };
 // });
 // console.table(saleProducts);
+
+// const arr = ["x", "y", "z"];
+// const [a, b] = ["x", "y", "z"];
+
+// console.log(a);
+// console.log(b);
+
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+
+// const { x, y, z } = { x: "aaa", y: "bbb", z: "ccc" };
+
+// // console.log(obj.x);
+// // console.log(obj.y);
+// // console.log(obj.z);
+
+// console.log(x);
+// console.log(y);
+// console.log(z);
+
+// const fruits = [
+//   "banana",
+//   "mango",
+//   "သခွားသီး",
+//   "apple",
+//   "မာကလာသီး",
+//   "orange",
+//   "pineapple",
+//   "ကွဲကော်သီး",
+// ];
+
+// console.log(fruits);
+
+// // fruits.sort()
+// fruits.sort((a, b) => {
+//   console.log(b.localeCompare(a));
+//   return b.localeCompare(a);
+// });
+
+// console.log(fruits);
+// console.log(arr);
+
+// for (let i in arr) {
+//   arr[i] = arr[i].toUpperCase();
+// }
+
+// const newArr = arr.map((el) => el.toUpperCase());
+
+// console.log(newArr);
+
+// console.log(arr);
+
+// console.log(arr);
+
+// console.log(arr.splice(1,3));
+// console.log(arr.slice(2, 4));
+
+// console.log(arr);
+
+// console.log(arr);
+
+// const fruits = [...arr, "orange"];
+
+// console.log(fruits);
+
+// console.log(arr);
+
+// arr.push("orange");
+
+// console.log(arr);
+
+// arr[1] = "orange";
+
+// console.log(arr);
+
+// const obj = { x: 10, y: 20, z: 30 };
+
+// console.log(obj);
+
+// obj.y = 50;
+
+// console.log(obj);
+
+// const str = "hein htet zan";
+
+// console.log(str);
+
+// str[2] = "a";
+
+// console.log(str);
